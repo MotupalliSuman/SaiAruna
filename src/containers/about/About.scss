@@ -1,0 +1,102 @@
+// About.scss
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background-color: #fafafa;
+    color: #333;
+  
+    /* For larger screens */
+    .section1-left-con {
+      max-width: 50%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      .section1-textTop-con {
+        .posterFont {
+          font-size: 1.5em;
+          font-weight: bold;
+          color: #f8b400;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+        }
+  
+        .section1-left-con-heading {
+          font-size: 2.5em;
+          color: #222;
+          font-weight: 700;
+          line-height: 1.2;
+        }
+      }
+  
+      .section1-textBottom-con {
+        .section1-textBottom-text {
+          font-size: 1.1em;
+          line-height: 1.6;
+          color: #555;
+          margin-top: 10px;
+        }
+      }
+    }
+  
+    /* Right-side image container */
+    .section1-right-con {
+      max-width: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .section-right-img-con {
+        width: 100%;
+        max-width: 400px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+    }
+  
+    /* Responsive design */
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 20px;
+  
+      .section1-left-con {
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+  
+        .section1-left-con-heading {
+          font-size: 2em;
+        }
+  
+        .posterFont {
+          font-size: 1.2em;
+        }
+  
+        .section1-textBottom-text {
+          font-size: 1em;
+        }
+      }
+  
+      .section1-right-con {
+        max-width: 100%;
+        margin-top: 20px;
+  
+        .section-right-img-con {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+  
